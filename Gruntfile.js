@@ -26,6 +26,11 @@ module.exports = function (grunt) {
         src: ['src/ui-forms.js'],
         dest: 'dist/ui-forms.js',
       }
+    },
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js'
+      }
     }
   });
 
