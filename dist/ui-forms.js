@@ -1,6 +1,6 @@
 (function () { 
 "use strict";
-angular.module('ui.forms')
+angular.module('ui.forms', [])
   .provider('$uibFormControlErrors', function () {
 
     var uibFormControlErrorsProvider;
@@ -124,8 +124,6 @@ angular.module('ui.forms')
   .directive('select', inputTextareaDirective)
   .directive('textarea', inputTextareaDirective)
 
-
-
   .directive('ngMessages', function () {
     return {
       restrict: 'EA',
@@ -207,7 +205,6 @@ function inputTextareaDirective($uibUtil, $parse) {
       var ngModelCtrl = ctrls[1] || null;
       var parentForm = ctrls[2];
       var isReadonly = angular.isDefined(attr.readonly);
-//        var uibNoAsterisk = $parse(attr.uibNoAsterisk);
       var tagName = element[0].tagName.toLowerCase();
 
       if (!containerCtrl)
@@ -235,8 +232,6 @@ function inputTextareaDirective($uibUtil, $parse) {
       function setupAttributeWatchers() {
         if (containerCtrl.label) {
           attr.$observe('required', function (value) {
-            // We don't need to parse the required value, it's always a boolean because of angular's
-            // required directive.
             containerCtrl.label.toggleClass('uib-required', value);
           });
         }

@@ -1,4 +1,4 @@
-angular.module('ui.forms')
+angular.module('ui.forms', [])
   .provider('$uibFormControlErrors', function () {
 
     var uibFormControlErrorsProvider;
