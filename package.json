@@ -1,0 +1,13 @@
+{
+  "name": "ui-forms",
+  "author": "https://github.com/neulandmm/ui-forms/graphs/contributors",
+  "homepage": "https://github.com/neulandmm/ui-forms",
+  "repository": {
+    "url": "git://github.com/neulandmm/ui-forms.git"
+  },
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  },
+  "license": "MIT"
+}
