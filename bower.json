@@ -1,12 +1,12 @@
 {
-  "name": "ui-forms",
+  "name": "bootstrap-ui-forms",
   "version": "0.0.0",
   "homepage": "https://github.com/neulandmm/ui-forms",
   "authors": [
     "https://github.com/neulandmm/ui-forms/graphs/contributors"
   ],
   "description": "Form helpers for angular bootstrap combo",
-  "main": "ui-forms.js",
+  "main": "dist/ui-forms.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
